@@ -1,0 +1,373 @@
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	cursor: pointer;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+	height: 100vh;
+	position: relative;
+	background:linear-gradient(to bottom right,rgb(143, 141, 139),rgb(186, 186, 186),rgb(240, 240, 240));
+	overflow: hidden;
+	}
+
+.logo{
+	color: white;
+	font-size: 2rem;
+	position: absolute;
+	left: 4%;
+	top: 2%;
+	font-family: 'Satisfy', cursive;
+}
+
+.menu-bar .first-ul{
+	float: right;
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	top: 3%;
+	right: 8%;
+}
+
+.first-ul li{
+margin-right: 1.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.first-ul li:hover{
+animation: menu 1s;
+
+}
+
+@keyframes menu{
+	0%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.first-ul li a{
+	color: white;
+	padding: 0.5rem;
+	font-size: 1.1rem;
+}
+
+.banner{
+	position: absolute;
+	top: 20%;
+	right: 14%;
+}
+
+.Jose{
+	animation: move 5s;
+
+	height: 60vh;
+}
+@keyframes move{
+	0%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+} 
+
+.banner-head{
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+
+.banner-head > h2{
+	color: black;
+	font-family:'Satisfy', cursive;
+	font-size: 8.7rem;
+	font-weight: 300;
+	width: 50%;
+	line-height: 9rem;
+	letter-spacing: .2rem;
+	text-shadow:0 0.3rem 0.5rem rgba(0,0,0,.4);
+	opacity: 0;
+	animation: moveBanner 1s .5s forwards; 
+}
+
+.banner-head > p{
+	font-size: 1.5rem;
+	letter-spacing: .1rem;
+	margin-bottom:1.6rem;
+	text-shadow:0 0.3rem 0.5 rgba(0,0,0,.8);
+	font-family: 'Source Sans Pro', sans-serif;
+	opacity: 0;
+	animation: moveBanner 1s .7s forwards;
+}
+
+.banner-head > .button-one{
+	width: 8.6rem;
+	height: 2.6rem;
+	border-radius: 0.6rem;
+	background-color:#c29525;
+	border:none;
+	font-size: 0.8rem;
+	text-transform: uppercase; 
+	color: white;
+	text-shadow: 0 0.3rem 0.5 rgba(0,0,0,.4);
+	box-shadow: 0 0.3rem 0.5,rgba(0,0,0,.4);
+	cursor: pointer;
+	opacity: 0;
+	animation: moveBanner 1s .9s forwards; 
+}
+
+@keyframes moveBanner{
+	0%{
+		transform: translateY(40rem) rotateY(-60deg);
+	}
+	100%{
+		transform: translateY(0) rotateY(0);
+		opacity: 1;
+	}
+}
+
+.latest-product{
+	font-family: 'Lato', sans-serif; 
+	font-size: 1.6rem; 
+	text-align: center; 
+	text-shadow: 0 0.4rem 0.5rem rgba(0,0,0,.4); 
+	letter-spacing: .1rem;
+	font-weight: 100;
+	margin-top: 3rem; 
+	margin-bottom:3rem;
+}
+
+.newly-launch{
+	height: 50vh;
+	position: relative;
+	/*background-image: url("../img/TBC.jpg");
+	background-size: 100% 100%;*/
+}
+.image-boot{
+	width: 100%;
+	height: 100%;
+}
+
+.newly-launch > h3{
+		font-family: 'Lato', sans-serif;
+		text-shadow: 0 0.4rem 0.5rem rgba(0,0,0,.4);
+		font-size: 3rem;
+		position: absolute;
+		top:5.5%;
+	    left:15%;
+	    color: black;
+	    opacity: 0;
+	    animation:newly 1s 0.3s forwards;
+}
+
+.newly-launch > h6{
+		font-family: 'Noto Sans JP', sans-serif;
+		position: absolute;
+		top:19%;
+	    left:15.5%;
+	    color: black;
+	    font-size: 1rem;
+	    text-shadow: 0 0.4rem 0.5rem rgba(0,0,0,.4);
+	    opacity: 0;
+	    animation:newly 1s 0.7s forwards;
+}
+
+.newly-launch > p{
+		font-family: 'Noto Sans JP', sans-serif;
+		position: absolute;
+		top:30%;
+	    left:15%;
+	    color: black;
+	    font-size: 1rem;
+	    opacity: 0;
+	    animation:newly 1s 0.9s forwards;
+}
+
+.newly-launch > .button-two{
+	width: 8.6rem;
+	height: 2.6rem;
+	border-radius: 0.6rem;
+	background-color:#c29525;
+	border:none;
+	font-size: 0.8rem;
+	text-transform: uppercase; 
+	color: white;
+	text-shadow: 0 0.3rem 0.5 rgba(0,0,0,.4);
+	box-shadow: 0 0.3rem 0.5,rgba(0,0,0,.4);
+	cursor: pointer;
+	position: absolute;
+	top:60%;
+	left:15%;
+	opacity: 0;
+	animation:newly 1s 0.9s forwards;
+}
+
+@keyframes newly{
+	0%{
+		transform: translateX(-40rem);
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.Categories > img{
+	transition: all 1s ease;
+}
+
+.Categories > img:hover{
+	transform: rotateY(180deg);
+
+}
+
+.testimonial{
+	margin-top:3rem;
+	display: flex;
+	justify-content: center;
+}
+
+.testimonial > .container-testimonial{
+	margin:50px;
+	height:50vh;
+	width:20vw;
+	box-shadow: 0 0 1rem 0 rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: transform 0.5s ease;
+	text-align: center;
+}
+
+.container-testimonial > i{
+	margin-top: 3rem;
+	color: orange;
+	font-size: 1.8rem;
+}
+
+.container-testimonial > img{
+	border-radius:50%;
+	width: 5vw;
+	margin-bottom: 0.2rem;
+}
+
+.container-testimonial p{
+	letter-spacing:.1rem;
+	font-size: 12px;
+	color:#777;
+	margin: 12px 0;
+}
+
+.rating{
+	color:orange;
+	margin-bottom: 0.2rem;
+}
+
+.container-testimonial > h4{
+	color: #555;
+	font-size: 1rem;
+}
+
+.testimonial > .container-testimonial:hover{
+	transform: translateY(-10px);
+}
+
+.company-logo{
+	display: flex;
+	justify-content: center;
+	margin-top: 6rem;
+}
+
+.company-logo > img{
+	flex-basis:15rem;
+	height: 8rem;
+	filter:grayscale(100%);
+	transition: filter 0.3s ease; 
+}
+
+.company-logo > img:hover{
+	filter:grayscale(0%);
+}
+
+.footer{
+	margin-top: 6rem; 
+	display: flex;
+	justify-content: center;
+	background-color: rgb(143, 141, 139);
+	height: 35vh;
+}
+
+.footer > div{
+	margin: 2rem;
+}
+
+.column-uno > h3{
+	font-size: 1.1rem;
+}
+
+.column-uno > pre{
+	margin-top: 2.8rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+}
+
+.column-uno > a >img{
+	margin-top: 2rem;
+	height: 3rem;
+	border-radius: 0.3rem;	
+}
+
+.column-dos > h3{
+	margin-top:3.7rem;
+	font-family:'Satisfy', cursive;
+	font-size: 1.3rem;
+}
+
+.column-dos > pre{
+	font-size: 0.8rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin-top: 2.3rem;
+	letter-spacing: 0.1rem;
+}
+
+.column-tres > ul {
+	margin-top: 2rem;
+}
+
+.column-tres > li > a{
+	font-size: 0.1rem;
+	margin-bottom: 0.8rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	letter-spacing: 0.1rem; 
+}
+
+.column-quatro > ul{
+	margin-top: 2rem;
+}
+
+.column-quatro > li > a{
+	font-size: 0.1rem;
+	margin-bottom: 0.8rem;
+	font-family: 'Noto Sans JP', sans-serif; 
+	letter-spacing: 0.1rem;
+}
+
+/*media query */
+
+@media only screen and (max-width:700px)
+{}
+
+
